@@ -1,0 +1,61 @@
+# SWAS Sample Cooler Heat Duty Calculator -- Configuration
+target_temp_F: 77.0
+cw_supply_temp_F: 90.0
+cw_max_flow_gpm: 12.0
+cw_design_delta_T_F: 20
+subcool_margin_F: 10
+liquid_approach_F: 15
+analyzer_pressure_psig: 20.0
+analyzer_min_flow_cc_min: 150
+analyzer_max_flow_cc_min: 1000
+default_flow_lbm_per_min: 6.6
+transport_tube_od_in: 0.375   # 3/8" OD  (standard SWAS sample tubing)
+transport_tube_wall_in: 0.065  # wall thickness  =>  ID = 0.245"
+
+# ---------------------------------------------------------------------------
+# Cooler screening parameters (used by swas_cooler_screen.py)
+# ---------------------------------------------------------------------------
+screening:
+  candidates_file: cooler_candidates.json  # path to Sentry candidate database
+  chiller_supply_F: 55.0     # chilled-water supply temperature (F)
+  chiller_return_F: 65.0     # chilled-water design return temperature (F)
+  ua_margin_factor: 1.0      # candidate must have area >= A_required * this factor
+                             # increase above 1.0 for a more conservative screen
+  lmtd_correction_F: 1.0    # F-factor applied to LMTD (1.0 = pure counterflow)
+                             # reduce to ~0.85 for multi-pass shell-and-tube
+
+  # --- Feasibility & auto-adjustment settings ---
+  feasibility_enabled: true           # run thermal feasibility check after screening
+  allow_flow_reduction: true          # allow flowrate reduction as last-resort fallback
+  chw_max_flow_gpm: null              # CHW max flow (GPM); null = unlimited
+  feasibility_output: swas_feasibility_results.csv
+
+sample_points:
+  - name: Demin Water
+    temp_F: 104
+    pressure_psig: 130
+    phase_hint: liquid
+  - name: Cond Pump Disch.
+    temp_F: 100
+    pressure_psig: 440
+    phase_hint: liquid
+  - name: Cond Polisher Out
+    temp_F: 100
+    pressure_psig: 460
+    phase_hint: liquid
+  - name: Deaerator Inlet
+    temp_F: 281
+    pressure_psig: 129
+    phase_hint: liquid
+  - name: Deaerator Outlet
+    temp_F: 334
+    pressure_psig: 129
+    phase_hint: liquid
+  - name: Main Steam Hdr
+    temp_F: 847
+    pressure_psig: 1868
+    phase_hint: steam
+  - name: HRH Steam Hdr
+    temp_F: 875
+    pressure_psig: 320
+    phase_hint: steam

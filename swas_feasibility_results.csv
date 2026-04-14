@@ -1,0 +1,9 @@
+Sample Point,Phase,Is Steam,T_in (F),P (psig),T_prim Original (F),T_prim Adjusted (F),Flow Original (lb/min),Flow Adjusted (lb/min),A_primary Required (ft2),A_primary Available (ft2),A_primary Adjusted (ft2),Q_primary Required (Btu/hr),Q_primary Utility Max (Btu/hr),Q_primary Adjusted (Btu/hr),Q_secondary Adjusted (Btu/hr),Q_total (Btu/hr),Chiller Tons,Area OK,Utility OK,Primary Feasible,Secondary Feasible,CHW Flow Req (GPM),Flags
+Demin Water,Subcooled Liquid,False,104.0,130.0,104.0,104.0,6.6,3.21,0.000,2.500,0.000,0,120096,0,5188,5188,0.43,True,True,True,True,1.04,Secondary flow solved: 6.60 -> 3.210 lb/min
+Cond Pump Disch.,Subcooled Liquid,False,100.0,440.0,100.0,100.0,6.6,3.553,0.000,2.500,0.000,0,120096,0,4886,4886,0.41,True,True,True,True,0.98,Secondary flow solved: 6.60 -> 3.553 lb/min
+Cond Polisher Out,Subcooled Liquid,False,100.0,460.0,100.0,100.0,6.6,3.553,0.000,2.500,0.000,0,120096,0,4885,4885,0.41,True,True,True,True,0.98,Secondary flow solved: 6.60 -> 3.553 lb/min
+Deaerator Inlet,Subcooled Liquid,False,281.0,129.0,105.0,105.0,6.6,1.56,10.583,2.500,2.419,70094,120096,16568,2615,19183,0.22,False,True,False,True,0.52,Area Limited | Temp adjustment alone insufficient — flow reduction required | Adjusted Sample Flow: 6.60 -> 1.56 lb/min
+Deaerator Outlet,Subcooled Liquid,False,334.0,129.0,105.0,105.0,6.6,1.83,8.994,2.500,2.412,91725,120096,25433,3067,28500,0.26,False,True,False,True,0.61,Area Limited | Temp adjustment alone insufficient — flow reduction required | Adjusted Sample Flow: 6.60 -> 1.83 lb/min
+Main Steam Hdr,Superheated,True,847.0,1868.0,248.7,248.7,1.73,1.73,1.817,3.500,1.817,120000,120096,120000,17764,137764,1.48,True,True,True,True,3.55,
+HRH Steam Hdr,Superheated,True,875.0,320.0,248.7,248.7,1.61,1.61,1.785,3.500,1.785,120000,120096,120000,16625,136625,1.39,True,True,True,True,3.32,
+TOTAL,,,,,,,,,,,,,,282001.0,55030.0,337031.0,4.59,,,,,,

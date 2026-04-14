@@ -1,0 +1,94 @@
+[
+  {
+    "_comment": "===================================================================",
+    "_comment2": "Sentry Equipment Sample Cooler Candidate Database",
+    "_comment3": "Areas scraped from Sentry spec sheets (April 2026).",
+    "_comment4": "Pressure/temperature ratings carried from prior database where",
+    "_comment5": "available; null where not yet confirmed.",
+    "_comment6": "Source: https://www.sentry-equip.com/products-services/sampling/sample-coolers",
+    "_comment7": "FieldServiceType: 'steam'=condensing service, 'liquid'=single-phase only, 'both'=either",
+    "_comment8": "==================================================================="
+  },
+
+  {
+    "model_name": "Sentry TLR",
+    "service_type": "steam",
+    "max_pressure_psig": 3000,
+    "max_temp_F": 1000,
+    "heat_transfer_area_ft2": 2.4,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": 132,
+    "notes": "Baseline SWAS steam cooler. ~60 L/hr (~1000 cc/min) max sample flow."
+  },
+  {
+    "model_name": "Sentry FLR",
+    "service_type": "steam",
+    "max_pressure_psig": 3000,
+    "max_temp_F": 1000,
+    "heat_transfer_area_ft2": 3.5,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": 264,
+    "notes": "Higher flow, larger tube. ~120 L/hr (~2000 cc/min) max sample flow."
+  },
+  {
+    "model_name": "Sentry FXR",
+    "service_type": "steam",
+    "max_pressure_psig": 1500,
+    "max_temp_F": 750,
+    "heat_transfer_area_ft2": 4.7,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": 264,
+    "notes": "More area, same flow cap as FLR. ~120 L/hr (~2000 cc/min) max sample flow."
+  },
+
+  {
+    "model_name": "Sentry TSR",
+    "service_type": "liquid",
+    "max_pressure_psig": 600,
+    "max_temp_F": 500,
+    "heat_transfer_area_ft2": 1.2,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": 159,
+    "notes": "Small, flexible, common SWAS secondary. ~72 L/hr (~1200 cc/min) max sample flow."
+  },
+  {
+    "model_name": "Sentry TRW",
+    "service_type": "liquid",
+    "max_pressure_psig": null,
+    "max_temp_F": null,
+    "heat_transfer_area_ft2": 1.2,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": 159,
+    "notes": "Lower pressure boiler water use. ~72 L/hr (~1200 cc/min) max sample flow. Confirm P/T ratings with vendor."
+  },
+  {
+    "model_name": "Sentry FSR",
+    "service_type": "liquid",
+    "max_pressure_psig": 1500,
+    "max_temp_F": 750,
+    "heat_transfer_area_ft2": 1.7,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": 264,
+    "notes": "Higher capacity single-phase cooler. ~120 L/hr (~2000 cc/min) max sample flow."
+  },
+  {
+    "model_name": "Sentry WSW",
+    "service_type": "liquid",
+    "max_pressure_psig": null,
+    "max_temp_F": null,
+    "heat_transfer_area_ft2": 2.5,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": null,
+    "notes": "Up to ~100 gpm class system-level cooling. Confirm P/T ratings and sample flow limits with vendor."
+  },
+  {
+    "model_name": "Sentry W9000",
+    "service_type": "liquid",
+    "max_pressure_psig": 300,
+    "max_temp_F": 400,
+    "heat_transfer_area_ft2": 1.0,
+    "min_sample_flow_lbh": null,
+    "max_sample_flow_lbh": 106,
+    "notes": "Very small, point-of-use cooler. ~0.4-0.8 L/min (~400-800 cc/min) max sample flow."
+  }
+]

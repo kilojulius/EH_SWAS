@@ -1,0 +1,9 @@
+Sample Point,Phase,T_in (F),P (psig),T_sat (F),T_primary_out (F),T_out (F),Transport Flow (lb/min),Cooler Flow (lb/min),Analyzer Flow (cc/min),Velocity (fps),Q_desuperheat (BTU/hr),Q_condense (BTU/hr),Q_primary_CW (BTU/hr),CW_dT (F),Q_chiller (BTU/hr),Q_total (BTU/hr),Q_subcool_path (BTU/hr),Flags
+Demin Water,Subcooled Liquid,104.0,130.0,355.6,104.0,77.0,6.6,6.6,3002,5.4,0,0,0,0.0,10668,10668,10668,
+Cond Pump Disch.,Subcooled Liquid,100.0,440.0,457.4,100.0,77.0,6.6,6.6,3002,5.4,0,0,0,0.0,9075,9075,9075,
+Cond Polisher Out,Subcooled Liquid,100.0,460.0,461.7,100.0,77.0,6.6,6.6,3002,5.4,0,0,0,0.0,9074,9074,9074,
+Deaerator Inlet,Subcooled Liquid,281.0,129.0,355.1,105.0,77.0,6.6,6.6,3002,5.8,0,0,70094,11.7,11063,81157,81157,
+Deaerator Outlet,Subcooled Liquid,334.0,129.0,355.1,105.0,77.0,6.6,6.6,3002,6.0,0,0,91725,15.3,11063,102789,102789,
+Main Steam Hdr,Superheated,847.0,1868.0,627.3,248.7,77.0,6.6,1.73,788,119.3,24050,50570,120000,20.0,17764,137764,63144,Slip stream: 26% of transport flow (1.73 lb/min) to cooler
+HRH Steam Hdr,Superheated,875.0,320.0,427.5,248.7,77.0,6.6,1.61,733,781.4,24677,77233,120000,20.0,16625,136625,34715,Slip stream: 24% of transport flow (1.61 lb/min) to cooler
+TOTAL,,,,,,77.0,,,,,48727,127803,401819,,85332,487152,310622,
